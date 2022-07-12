@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.0.9-deno/mod.js';
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@deno/mod.js';
 ```
 
 #### removePunctuation( str )
@@ -80,7 +80,7 @@ The function removes the following characters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.0.9-deno/mod.js';
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@deno/mod.js';
 
 var str;
 var out;
