@@ -30,17 +30,104 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/string-remove-punctuation
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
+
+## Usage
+
+```javascript
+var removePunctuation = require( '@stdlib/string-remove-punctuation' );
+```
+
+#### removePunctuation( str )
+
+Removes punctuation characters from a `string`.
+
+```javascript
+var str = removePunctuation( 'Sun Tzu said: "A leader leads by example not by force."' );
+// returns 'Sun Tzu said A leader leads by example not by force'
+```
+
+The function removes the following characters:
+
+|    description   |  value  |     |
+| :--------------: | :-----: | --- |
+|    Apostrophe    | `` ` `` |     |
+|      Braces      |  `{ }`  |     |
+|     Brackets     |  `[ ]`  |     |
+|       Colon      |   `:`   |     |
+|       Comma      |   `,`   |     |
+| Exclamation Mark |   `!`   |     |
+|  Fraction Slash  |   `/`   |     |
+|    Guillemets    |  `< >`  |     |
+|    Parentheses   |  `( )`  |     |
+|      Period      |   `.`   |     |
+|     Semicolon    |   `;`   |     |
+|       Tilde      |   `~`   |     |
+|   Vertical Bar   |    \`   | \`  |
+|   Question Mark  |   `?`   |     |
+|  Quotation Marks |  `' "`  |     |
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var removePunctuation = require( '@stdlib/string-remove-punctuation' );
+
+var str;
+var out;
+
+str = 'Double, double, toil and trouble; Fire burn, and cauldron bubble!';
+out = removePunctuation( str );
+// returns 'Double double toil and trouble Fire burn and cauldron bubble'
+
+str = 'This module removes these characters: `{}[]:,!/<>().;~|?\'"';
+out = removePunctuation( str );
+// returns 'This module removes these characters '
+
+str = 'We have to hold the border – at all cost';
+out = removePunctuation( str );
+// returns 'We have to hold the border  at all cost'
+
+str = 'This a sentence without punctuation';
+out = removePunctuation( str );
+// returns 'This a sentence without punctuation'
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -58,7 +145,7 @@ npm install -g @stdlib/string-remove-punctuation-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: remove-punctuation [options] [<string>]
@@ -75,7 +162,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ remove-punctuation 'beep! beep!!!'
@@ -101,11 +188,6 @@ beep beep
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/string-remove-punctuation`][@stdlib/string-remove-punctuation]</span><span class="delimiter">: </span><span class="description">remove punctuation characters from a string.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -123,7 +205,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -146,8 +228,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/string-remove-punctuation-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/string-remove-punctuation-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/string-remove-punctuation.svg
+[npm-url]: https://npmjs.org/package/@stdlib/string-remove-punctuation
 
 [test-image]: https://github.com/stdlib-js/string-remove-punctuation/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/string-remove-punctuation/actions/workflows/test.yml?query=branch:main
@@ -163,7 +245,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
