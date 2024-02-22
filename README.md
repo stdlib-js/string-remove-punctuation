@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@esm/index.mjs';
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.1-esm/index.mjs';
 ```
 
 #### removePunctuation( str )
@@ -96,7 +96,7 @@ The function removes the following characters:
 <body>
 <script type="module">
 
-import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@esm/index.mjs';
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.1-esm/index.mjs';
 
 var str;
 var out;
