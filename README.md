@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-remove-punctuation/tags). For example,
+
+```javascript
 import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.2-esm/index.mjs';
 ```
 
@@ -96,7 +101,7 @@ The function removes the following characters:
 <body>
 <script type="module">
 
-import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.2-esm/index.mjs';
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@esm/index.mjs';
 
 var str;
 var out;
