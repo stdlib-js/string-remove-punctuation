@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-remove-punctuation/tags). For example,
+
+```javascript
 import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.3-deno/mod.js';
 ```
 
@@ -91,7 +96,7 @@ The function removes the following characters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.3-deno/mod.js';
+import removePunctuation from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@deno/mod.js';
 
 var str;
 var out;
