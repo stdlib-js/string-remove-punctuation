@@ -50,7 +50,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-removePunctuation = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@umd/browser.js' )
+removePunctuation = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.3-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -62,7 +62,7 @@ var removePunctuation = require( 'path/to/vendor/umd/string-remove-punctuation/i
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.3-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -118,7 +118,7 @@ The function removes the following characters:
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-punctuation@v0.2.3-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
